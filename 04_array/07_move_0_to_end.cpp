@@ -1,6 +1,7 @@
 //code 1: this code is brute force approach and complexity is O(n^2) and maintains the order of elements of array
 
 #include<iostream>
+
 using namespace std;
 int main()
 {
