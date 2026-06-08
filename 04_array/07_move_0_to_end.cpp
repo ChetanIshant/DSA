@@ -3,6 +3,7 @@
 #include<iostream>
 using namespace std;
 int main()
+
 {
 	int n, j, temp, i;
 	cout<<"Enter the size of array: ";
