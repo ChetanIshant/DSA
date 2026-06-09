@@ -17,3 +17,8 @@ int main()
 	}
 	cout << "The element with single occurancy is : " << result;
 }
+
+
+
+//this is not the final code
+//new code will be updated soon
