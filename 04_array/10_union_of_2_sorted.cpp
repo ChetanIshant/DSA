@@ -95,3 +95,5 @@ int main()
 		cout << newArr[x] << " ";
 	}
 }
+//this is not the final code
+//new code will be updated soon
