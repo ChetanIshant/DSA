@@ -72,13 +72,13 @@ int main()
 
     for(int i = 1; i <= n; i++)
     {
-        xor1 ^= i;
+        xor1 ^= i; //xor1 = xor1 ^ i;
     }
 	
     for(int i = 0; i < n - 1; i++)
     {
         cin >> arr[i];
-        xor2 ^= arr[i];
+        xor2 ^= arr[i]; //xor2 = xor2 ^ arr[i];
     }
 
     cout << "Missing Number = " << (xor1 ^ xor2);
