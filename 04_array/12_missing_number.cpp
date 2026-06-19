@@ -52,3 +52,34 @@ int main()
 	}
 	cout << "Missing number is: " << totalSum - arrSum;
 }
+
+
+//most optimal approach (using XOR operator)
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main()
+{
+    int n;
+    cout << "Enter the size of array: ";
+    cin >> n;
+
+    vector<int> arr(n - 1);
+
+    int xor1 = 0;
+    int xor2 = 0;
+
+    for(int i = 1; i <= n; i++)
+    {
+        xor1 ^= i;
+    }
+	
+    for(int i = 0; i < n - 1; i++)
+    {
+        cin >> arr[i];
+        xor2 ^= arr[i];
+    }
+
+    cout << "Missing Number = " << (xor1 ^ xor2);
+}
