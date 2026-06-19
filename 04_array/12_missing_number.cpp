@@ -32,3 +32,23 @@ int main()
 		flag = 0;
 	}
 }
+
+
+//semi-optimal (using sum method)
+#include<iostream>
+#include<vector>
+using namespace std;
+int main()
+{
+	int n, arrSum = 0;
+	cout << "Enter the size of array: ";
+	cin >> n;
+	int totalSum = n * (n + 1) / 2; 
+	vector<int> arr(n - 1);
+	for(int i = 0; i < n - 1; i++)
+	{
+		cin >> arr[i];
+		arrSum = arrSum + arr[i];
+	}
+	cout << "Missing number is: " << totalSum - arrSum;
+}
