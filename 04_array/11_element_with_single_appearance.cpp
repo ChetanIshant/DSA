@@ -2,10 +2,8 @@
 #include<vector>
 using namespace std;
 int main()
-
 {
 	int n, result=0;
-	
 	cout << "Enter the size of array: ";
 	cin >> n;
 	
