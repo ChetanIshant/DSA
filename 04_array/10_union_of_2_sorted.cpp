@@ -26,28 +26,59 @@ int main()
 		cin >> arr2[l];
 	}
 	
-	
-	newArr[0]=0;
 	while(1)
 	{
-		if(arr1[i] == newArr[temp])
-		i += 1;
-		else if(arr2[j] == newArr[temp])
-		j += 1;
-//	else
-//	{	
-		if((arr1[i] == arr2[j]))
+		if(i >= n)
+		{
+			while(j < m)
+			{
+				if(newArr[temp - 1] == arr2[j])
+				j += 1;
+				else
+				{
+					newArr[temp] = arr2[j];
+					j += 1;
+					temp += 1; 
+				}
+			}
+			break;
+		}
+		else if(j >= m)
+		{
+			while(i < n)
+			{
+				if(newArr[temp - 1] == arr1[i])
+				i += 1;
+				else
+				{
+					newArr[temp] = arr1[i];
+					i += 1;
+					temp += 1;
+				}
+			}
+			break;
+		}
+
+		if(temp > 0)
+		{
+			if(newArr[temp - 1] == arr1[i])
+			{
+				i += 1;
+				continue;
+			}
+			else if(newArr[temp - 1] == arr2[j])
+			{
+				j += 1;
+				continue; 
+			}	
+		}
+
+		if(arr1[i] == arr2[j])
 		{
 			newArr[temp] = arr1[i];
+			temp += 1;
 			i += 1;
 			j += 1;
-			temp += 1;			
-		}
-		else if(arr2[j] < arr1[i])
-		{
-			newArr[temp] = arr2[j];
-			j += 1;
-			temp += 1;
 		}
 		else if(arr1[i] < arr2[j])
 		{
@@ -55,45 +86,25 @@ int main()
 			i += 1;
 			temp += 1;
 		}
-//	}
 		
-		if(i == n)
-		{
-			newArr[temp] = arr1[i];
-			temp += 1;
-			while(j < m)
-			{
-				newArr[temp] = arr2[j];
-				j += 1;
-				temp += 1;
-			}
-			break;
-		}
-		else if(j == m)
+		else if(arr2[j] < arr1[i])
 		{
 			newArr[temp] = arr2[j];
 			temp += 1;
-			while(i < n) 
-			{
-				newArr[temp] = arr1[i];
-				i += 1;
-				temp += 1;
-			}
-			break;
+			j += 1;
 		}
 		
-		//cout << temp;
-		
-//		if(i == n-1 && j == m-1)
-//		break;
+		if(i >= n && j >= m)
+		break;
 	}
-	
-	//cout << temp << endl;
-	cout<<"The new array is :"<<endl;
-	for(int x = 0; x < temp-1; x++)
+
+	cout << "The final array is: ";
+	for(int x = 0; x < temp; x++)
 	{
 		cout << newArr[x] << " ";
 	}
 }
-//this is not the final code
-//new code will be updated soon
+
+// Union of two sorted arrays using the two-pointer technique.
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
