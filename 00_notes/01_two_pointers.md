@@ -12,7 +12,7 @@
 - Palindrome checking
 - Remove duplicates
 - Merging sorted arrays
-- Sliding Window problems
+- Sliding Window problems(same direction two pointers)
 
 ---
 
