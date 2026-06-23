@@ -3,7 +3,7 @@
 //it will goes to O(n^2) which is not optimal
 //if we have to solve by using two pointer approach and in optimal complexoty, then the array must be sorted or we have to sort it first.
 
-
+//Two-pointer approach for sorted array
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -36,6 +36,7 @@ int main()
 }
 
 
+//Two-pointer approach for unsorted array Complexity -> O(n^2)
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -67,4 +68,3 @@ int main()
 	}
 	cout << "NO";
 }
-*/
