@@ -70,7 +70,8 @@ int main()
 }
 
 
-//sorted and unsorted array and then find the two sum using two pointer approach: Complexity -> O(n log n)
+//sorted and unsorted array and then find the two sum using two pointer approach: 
+//Complexity -> O(n log n)
 
 #include <iostream>
 #include <vector>
