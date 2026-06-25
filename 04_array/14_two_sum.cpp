@@ -36,8 +36,6 @@ int main()
 }
 
 
-
-
 //Two-pointer approach for unsorted array, Complexity -> O(n^2)
 #include<iostream>
 #include<vector>
@@ -72,9 +70,9 @@ int main()
 }
 
 
+
 //sorted and unsorted array and then find the two sum using two pointer approach: 
 //Complexity -> O(n log n)
-
 #include <iostream>
 #include <vector>
 #include<algorithm>
