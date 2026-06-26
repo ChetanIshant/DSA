@@ -38,38 +38,6 @@ int main()
 
 
 
-//Two-pointer approach for unsorted array, Complexity -> O(n^2)
-#include<iostream>
-#include<vector>
-using namespace std;
-int main()
-{
-	int n, target, ptr1 = 0, ptr2 = 0;
-	cout << "Enter the size of array: ";
-	cin >> n;
-	cout << "Enter the target value: ";
-	cin >> target;
-	vector<int> arr(n);
-	for(int i = 0; i < n; i++)
-	{
-		cin >> arr[i];
-	}
-	while(ptr1 < n - 1)
-	{
-		ptr2 = ptr1 + 1;
-		while(ptr2 < n)
-		{
-			if((arr[ptr1] + arr[ptr2]) == target)
-			{
-				cout << "YES" << endl << "The indexes are: [" << ptr1 << ", " << ptr2 << "]";
-				return 0;
-			}
-			ptr2 += 1;
-		}
-		ptr1 += 1;
-	}
-	cout << "NO";
-}
 
 
 
