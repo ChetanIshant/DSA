@@ -4,37 +4,6 @@
 //if we have to solve by using two pointer approach and in optimal complexoty, then the array must be sorted or we have to sort it first.
 
 
-//Two-pointer approach for sorted array, Complexity -> O(n)
-#include<iostream>
-#include<vector>
-using namespace std;
-int main()
-{
-	int n, target, left = 0, right;
-	cout << "Enter the size of array: ";
-	cin >> n;
-	right = n - 1;
-	cout << "Enter the target value: ";
-	cin >> target;
-	vector<int> arr(n);
-	for(int i = 0; i < n; i++)
-	{
-		cin >> arr[i];
-	}
-	while(left < right)
-	{
-		if(arr[left] + arr[right] == target)
-		{
-			cout << "YES" << endl << "The indexes are: [" << left << ", " << right << "]";
-			return 0;
-		}
-		else if(arr[left] + arr[right] < target)
-		left += 1;
-		else
-		right -= 1;		
-	}
-	cout << "NO";
-}
 
 
 
