@@ -34,4 +34,8 @@ vector<int> v(5,10);
 v.push_back(99);
 // O/P -> [10, 10, 10, 10, 10, 99]
 
+//We can also copy a existing vector to another new vector.
+vector<int> v1(5, 10);
+vector<int> v2(v1);
+//both the vectors have same data and v2 is the copy of v1.
 
