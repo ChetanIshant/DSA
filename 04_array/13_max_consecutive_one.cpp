@@ -17,33 +17,3 @@ int main()
         cin >> arr[i];
     }
 
-    while(ptr1 < n)
-    {
-        if(arr[ptr1] == 1)
-        {
-            ptr2 = ptr1 + 1;
-
-            while(ptr2 < n && arr[ptr2] == 1)
-            {
-                ptr2++;
-            }
-
-            temp = ptr2 - ptr1;
-
-            if(temp > res)
-            {
-                res = temp;
-            }
-
-            ptr1 = ptr2;
-        }
-        else
-        {
-            ptr1++;
-        }
-    }
-
-    cout << "Maximum consecutive one's: " << res;
-
-    return 0;
-}
