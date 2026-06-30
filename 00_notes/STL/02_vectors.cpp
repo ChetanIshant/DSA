@@ -10,6 +10,12 @@ Elements are stored in contigious memory as same as array
 vector<int> vv;
 //This is a empty/dynamic container {}.
 
+v.push_back(1);
+v.emplace_back(2);
+// 1 is pushed in the vector v by push_back(1)  -> {1}
+// 2 is pushed in the vector v by emplace_back(2)  -> {1, 2} 
+// it is said that both the function does the same work, but emplace_back() is faster than push_back();
+
 
 vector<pair<int, int>> vec;
 // pair can also be defined as the data type of declaring the vector.
