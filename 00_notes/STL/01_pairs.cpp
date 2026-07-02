@@ -30,7 +30,21 @@ int main()
 	cout << "O/P for array of pairs: " << arr[1].second;
 }
 
+//for integer and string both in one single pair:
+#include <iostream>
+#include <utility>
+using namespace std;
 
+int main() {
+    pair<int, string> p;
+
+    p.first = 101;
+    p.second = "Ishant";
+
+    cout << p.first << " " << p.second << endl;
+
+    return 0;
+}
 
 // interview ready: 
 // A pair is an STL template class that stores two related values together as a single object, 
