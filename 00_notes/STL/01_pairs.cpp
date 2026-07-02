@@ -46,6 +46,3 @@ int main() {
     return 0;
 }
 
-// interview ready: 
-// A pair is an STL template class that stores two related values together as a single object, 
-// where the values can be of the same or different data types.
