@@ -1,9 +1,4 @@
-//brute force approach
 
-
-#include<iostream>
-#include<vector>
-using namespace std;
 int main()
 {
 	int n, flag = 0;
