@@ -71,4 +71,28 @@ int main()
 }
 
 
+//sorted and unsorted array and then find the two sum using two pointer approach: 
+//Complexity -> O(n log n)
+#include <iostream>
+#include <vector>
+#include<algorithm>
+using namespace std;
 
+int main()
+{
+    int n, target;
+    cout << "Enter size: ";
+    cin >> n;
+    vector<int> arr(n);
+    cout << "Enter elements: " << endl;
+    for(int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    cout << "Enter target: ";
+    cin >> target;
+
+    // Sorting 
+    sort(arr.begin(), arr.end());
+
+    
