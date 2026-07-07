@@ -69,9 +69,3 @@ right = 0;
 
 ---
 
-## Remember
-
-- Sorted Array → Think Two Pointers
-- Unsorted Array + Indices Needed → Hash Map
-- Unsorted Array + Indices Not Needed → Sort + Two Pointers
-- Subarray/Substring → Sliding Window
