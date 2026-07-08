@@ -97,4 +97,14 @@ int main()
 		if(i >= n && j >= m)
 		break;
 	}
+	cout << "The final array is: ";
+	for(int x = 0; x < temp; x++)
+	{
+		cout << newArr[x] << " ";
+	}
+}
+
+// Union of two sorted arrays using the two-pointer technique.
+// Time Complexity: O(n + m)
+// Space Complexity: O(n + m)
 
