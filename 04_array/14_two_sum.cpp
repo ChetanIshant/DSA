@@ -1,4 +1,4 @@
-
+//We have multiple approaches for solving a two sum problem:
 //Very first which I have tried is two pointer approach, for sorted array it will work in O(n) but in-case of unsorted array, 
 //it will goes to O(n^2) which is not optimal
 //if we have to solve by using two pointer approach and in optimal complexoty, then the array must be sorted or we have to sort it first.
