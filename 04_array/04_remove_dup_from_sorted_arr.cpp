@@ -29,13 +29,4 @@ int main()
 			}
 			return 0;
 		}
-		if(arr[i]==arr[temp])
-		{
-			while(arr[temp]==arr[i])
-			{
-				temp+=1;
-			}
-			arr[i+1]=arr[temp];
-		}
-	}
-}
+
