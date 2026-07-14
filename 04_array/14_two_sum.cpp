@@ -71,6 +71,53 @@ int main()
 }
 
 
+//sorted and unsorted array and then find the two sum using two pointer approach: 
+//Complexity -> O(n log n)
+#include <iostream>
+#include <vector>
+#include<algorithm>
+using namespace std;
+
+int main()
+{
+    int n, target;
+    cout << "Enter size: ";
+    cin >> n;
+    vector<int> arr(n);
+    cout << "Enter elements: " << endl;
+    for(int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+    cout << "Enter target: ";
+    cin >> target;
+
+    // Sorting 
+    sort(arr.begin(), arr.end());
+
+	// Two Pointers
+    int left = 0;
+    int right = n - 1;
+    while(left < right)
+    {
+        int sum = arr[left] + arr[right];
+        if(sum == target)
+        {
+            cout << "YES\n";
+            cout << "Pair Found: "
+                 << arr[left] << " + "
+                 << arr[right] << " = "
+                 << target;
+            return 0;
+        }
+        else if(sum < target)
+        left++;
+        else
+		right--;
+    }
+    cout << "NO";
+    return 0;
+}	
 
 
 
