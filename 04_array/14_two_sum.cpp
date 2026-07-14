@@ -115,9 +115,7 @@ int main()
         else
 		right--;
     }
-    cout << "NO";
-    return 0;
-}	
+
 
 
 
