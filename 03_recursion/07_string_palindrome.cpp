@@ -1,6 +1,7 @@
 #include<iostream>
 using namespace std;
 
+
 bool func(string s, int temp)
 {
 	if(temp== s.length()/2)
