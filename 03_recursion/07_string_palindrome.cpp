@@ -13,19 +13,3 @@ bool func(string s, int temp)
 	return func(s, temp+1);
 }
 
-int main()
-{
-	string s;
-	bool res;
-	cout<<"Enter the string: ";
-	cin>>s;
-	res=func(s, 0);
-	if(res)
-	{
-		cout<<"String is palindrome";
-	}
-	else
-	{
-		cout<<"String is not palindrome";
-	}
-}
