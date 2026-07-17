@@ -1,5 +1,4 @@
-#include<iostream>
-using namespace std;
+
 
 bool func(string s, int temp)
 {
