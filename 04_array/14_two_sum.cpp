@@ -8,6 +8,7 @@
 #include<iostream>
 #include<vector>
 using namespace std;
+//main function
 int main()
 {
 	int n, target, left = 0, right;
