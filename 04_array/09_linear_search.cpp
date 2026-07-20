@@ -14,6 +14,11 @@ int main()
 	cout << "Enter the value to be searched: ";
 	cin >> key;
 	
+	for(int i = 0; i < n; i++)
+	{
+		cin >> arr[i];
+	}
+
 	while(i < n)
 	{
 		if(arr[i] == key)
