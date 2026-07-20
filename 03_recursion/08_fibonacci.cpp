@@ -10,7 +10,7 @@ void func(int n, int temp, int arr[])
 	func(n, temp+1, arr);
 }
 
-int main()
+
 {
 	int n;
 	cout<<"Enter the number of times the fibonacci series to be printed: ";
