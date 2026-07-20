@@ -25,8 +25,4 @@ int main()
 	arr[1]=1;
 	func(n, 2, arr);
 	cout<<"The fibonacci series is: ";
-	for(int i=0;i<=n;i++)
-	{
-		cout<<arr[i]<<" ";
-	}
-}
+
