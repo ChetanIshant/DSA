@@ -41,6 +41,9 @@ int main()
             ptr1++;
         }
     }
+    cout << "Maximum consecutive one's: " << res;
 
+    return 0;
+}
 
 
