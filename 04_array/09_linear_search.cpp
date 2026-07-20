@@ -19,15 +19,4 @@ int main()
 		cin >> arr[i];
 	}
 	
-	while(i < n)
-	{
-		if(arr[i] == key)
-		{
-			cout << "The element: " << arr[i] << " found at index value : " << i;
-			return 0;
-		}
-	
-		i+=1;
-	}
-	cout << "The key value is not present in the array ";
-}
+
