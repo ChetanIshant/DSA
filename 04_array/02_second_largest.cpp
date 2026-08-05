@@ -38,7 +38,5 @@ int main()
             secondLargest=arr[i];
         }
     }
-    cout<<"Largest element is : "<<largest<<endl;
-    cout<<"Second largest element is :"<<secondLargest;
-    return 0;
+
 }
