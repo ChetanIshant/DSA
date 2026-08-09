@@ -110,14 +110,7 @@ int main()
                  << target;
             return 0;
         }
-        else if(sum < target)
-        left++;
-        else
-		right--;
-    }
-    cout << "NO";
-    return 0;
-}	
+
 
 
 
