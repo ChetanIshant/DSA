@@ -42,10 +42,5 @@ int main()
         }
     }
 
-    cout << "Maximum consecutive one's: " << res;
-    
-
-    return 0;
-}
 
 
