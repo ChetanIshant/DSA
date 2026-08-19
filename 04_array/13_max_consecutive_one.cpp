@@ -29,6 +29,10 @@ int main()
 
             temp = ptr2 - ptr1;
 
+            if(temp > res)
+            {
+                res = temp;
+            }
 
             ptr1 = ptr2;
         }
